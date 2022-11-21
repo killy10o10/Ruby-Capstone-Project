@@ -13,25 +13,19 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+- [� Table of Contents](#-table-of-contents)
+- [📖 Catalogue of Things ](#-catalogue-of-things-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -87,6 +81,11 @@ Have `Ruby`, and `Git` installed
 - GitHub: [@killy10o10](https://github.com/killy10o10)
 - Twitter: [@Quami_Killy](https://twitter.com/Quami_Killy)
 - LinkedIn: [@Kingsley Okine](https://www.linkedin.com/in/kingsley-okine/)
+
+👤 **Walter Okumu**
+
+- GitHub: [@WalterOkumu](https://github.com/WalterOkumu)
+- Twitter: [@OkumuOriaro](https://twitter.com/OkumuOriaro)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
