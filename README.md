@@ -87,7 +87,11 @@ Have `Ruby`, and `Git` installed
 - GitHub: [@WalterOkumu](https://github.com/WalterOkumu)
 - Twitter: [@OkumuOriaro](https://twitter.com/OkumuOriaro)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+👤 **Benjamin Kisenge**
+
+- GitHub: [@benjamin kisenge](https://github.com/iambenkis)
+- Twitter: [@benjamin kisenge](https://twitter.com/iambenkis)
+- LinkedIn: [benjamin kisenge](https://www.linkedin.com/in/ben-kisenge/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
