@@ -1,6 +1,4 @@
-
 class Main
-
   def start
     puts 'Welcome to the App'
     loop do
