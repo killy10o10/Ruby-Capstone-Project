@@ -57,6 +57,9 @@ class App
       13 - Exit"
       option = gets.chomp.to_i
       break if option == 13
+     10 - Exit"
+      option = gets.chomp.to_i
+      break if option == 10
 
       options(option)
     end
