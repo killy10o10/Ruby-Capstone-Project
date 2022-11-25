@@ -1,9 +1,16 @@
+require_relative 'app'
+
 class Main
+  def initialize
+    @app = App.new
+  end
+
   def start
     puts 'Welcome to the App'
     loop do
       list_options
       option = gets.chomp.to_i
+      options(option)
       if option == 13
         puts 'Goodbye'
         break
@@ -26,6 +33,17 @@ class Main
     puts '12. Add a movie'
     puts '13. Exit'
   end
+
+  def options(option)
+    case option
+      when 12
+        @app.add_item
+      when 10
+        @app.list_movie
+      when 11
+        @app.list_source
+      end
+    end
 end
 
 main = Main.new
