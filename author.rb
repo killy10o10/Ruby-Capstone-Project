@@ -8,7 +8,7 @@ class Author
     @items = []
   end
 
-  def list_all(authors)
+  def self.list_all(authors)
     if authors.empty?
       puts 'Seem like there are no authors on your list😅, Add some authors...'
     else

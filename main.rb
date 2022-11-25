@@ -1,10 +1,17 @@
+require './app'
+
 class Main
+  def initialize
+    @app = App.new
+  end
+
   def start
     puts 'Welcome to the App'
     loop do
       list_options
       option = gets.chomp.to_i
-      if option == 13
+      options(option)
+      if option == 14
         puts 'Goodbye'
         break
       end
@@ -22,11 +29,25 @@ class Main
     7. List of games
     8. List all authors
     9. Add a game
-    10. List all movies
-    11. List all sources
-    12. Add a movie
-    13. Exit
+    10. Add author
+    11. List all movies
+    12. List all sources
+    13. Add a movie
+    14. Exit
     '
+  end
+
+  def options(option)
+    case option
+    when 7
+      @app.list_all_games
+    when 8
+      @app.list_all_authors
+    when 9
+      @app.add_game
+    when 10
+      @app.add_author
+    end
   end
 end
 

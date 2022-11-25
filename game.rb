@@ -1,5 +1,6 @@
 require 'date'
-require 'item'
+require './item'
+require './author'
 
 class Game < Item
   attr_accessor :multiplayer, :last_played_at, :label, :author, :genre
@@ -10,21 +11,19 @@ class Game < Item
     @multiplayer = multiplayer
   end
 
-  def list_all(games)
+  def self.list_all_games(games)
     if games.empty?
       puts 'Seem like your game list is empty 😅, add some games...'
     else
       puts "Games list, count (#{games.count})🎮 :\n\n"
-      games.each_with_index do |game, index|
-        puts "#{index + 1}) Title: '#{game.label.title}'",
-             "  Author: #{game.author.first_name} #{game.author.last_name}",
-             "  Last Played: #{game.last_played_at}",
+      games.each do |game|
+        puts "  Last Played: #{game.last_played_at}",
              "  Multiplayer: #{game.multiplayer ? 'Yes' : 'No'}"
       end
     end
   end
 
-  def multiplayer?
+  def self.multiplayer?
     print 'Is it a Multiplayer Game? [Y/N]:'
     multi = gets.chomp.downcase
     case multi
