@@ -87,7 +87,7 @@ class App
     when 6
       list_authors
     end
-    print "\nPress Any Key to Continue..."
+    print "\nPress Enter/Return to Continue..."
     $stdin.getch
     system('clear')
   end
