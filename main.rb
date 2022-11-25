@@ -1,32 +1,39 @@
-class Main
-  def start
-    puts 'Welcome to the App'
-    loop do
-      list_options
-      option = gets.chomp.to_i
-      if option == 13
-        puts 'Goodbye'
-        break
-      end
-    end
-  end
+require_relative 'app'
+require_relative 'choice'
 
-  def list_options
-    puts '1. List all books'
-    puts '2. List all labels'
-    puts '3. Add a book'
-    puts '4. List all music albums'
-    puts '5. List all genres '
-    puts '6. Add a music album'
-    puts '7. List of games'
-    puts '8. List all authors'
-    puts '9. Add a game'
-    puts '10. List all movies'
-    puts '11. List all sources'
-    puts '12. Add a movie'
-    puts '13. Exit'
+def options(_app_instance)
+  puts "\n-------------------"
+  puts 'Choose and option'
+  comands = [
+    '[1] List all books',
+    '[2] List all labels',
+    '[3] Add new book',
+    '[4] Add Game',
+    '[5] list Game',
+    '[6] List Authors',
+    '[7] List all music albums',
+    '[8] List all genres',
+    '[9] Add new music album',
+    '[10] Exit'
+  ]
+
+  comands.each do |cmd|
+    puts cmd
   end
 end
 
-main = Main.new
-main.start
+def main
+  app = App.new
+  app.load_state
+  app.music_from_file(app)
+
+  exit = false
+  puts 'Welcome to Ruby Capstone Project'
+  while exit == false
+    options(app)
+    exit = user_choice(app)
+  end
+  puts 'Thank you!'
+end
+
+main

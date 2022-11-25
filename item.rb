@@ -1,5 +1,6 @@
 require 'date'
 
+# Main super class
 class Item
   attr_accessor :publish_date, :author, :source, :genre, :label, :id
   attr_reader :archived
@@ -20,12 +21,29 @@ class Item
     author.add_item(self) unless author.items.include?(self)
   end
 
-  def can_be_archived?
-    ten_years_ago = time.now.year - @publish_date.year
-    ten_years_ago > 10
+  def move_to_archive
+    return @archived = true if can_be_archived?
   end
 
-  def move_to_archive
-    @archived = true if can_be_archived?
+  private
+
+  def can_be_archived?
+    ten_years_ago = Date.today - 3600
+    @publish_date <= ten_years_ago
   end
 end
+
+#
+# TEST CLASS
+#
+# item = Item.new('2022-01-02')
+# item2 = Item.new('2010-01-02')
+#
+# puts item.can_be_archived?
+# puts item2.can_be_archived?
+#
+# puts item.move_to_archive
+# puts item2.move_to_archive
+#
+# puts item.archived
+# puts item2.archived
