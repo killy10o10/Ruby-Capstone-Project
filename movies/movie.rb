@@ -1,5 +1,5 @@
-require_relative 'item'
-require_relative 'source'
+require_relative '../item'
+require_relative '../sources/source'
 
 class Movie < Item
   attr_accessor :publish_date, :archived, :silent
@@ -14,6 +14,3 @@ class Movie < Item
     super || @silent ? true : false
   end
 end
-
-# m = Movie.new('equip', '2022 ', true)
-# puts m.source

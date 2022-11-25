@@ -13,25 +13,19 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+- [� Table of Contents](#-table-of-contents)
+- [📖 Catalogue of Things ](#-catalogue-of-things-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -52,99 +46,23 @@
 - **PostgreSQL**
 - **Rspec**
 
-<!-- Features -->
-
-<!-- ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]** -->
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+## Getting Started
 
-## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
-
-To get a local copy up and running, follow these steps.
+To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
-
-### Setup
-
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
+Have `Ruby`, and `Git` installed
 
 ### Usage
 
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
+`ruby main.rb`
 
 ### Run tests
 
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+`rpsec`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,31 +70,28 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Abdelhadi Hireche**
 
 - GitHub: [@aeh1707](https://github.com/aeh1707)
 - Twitter: [@aeh1707](https://twitter.com/aeh1707)
 - LinkedIn: [abdelhadi-hireche](https://linkedin.com/in/abdelhadi-hireche)
 
-👤 **Author2**
+👤 **Okine Kingsley**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@killy10o10](https://github.com/killy10o10)
+- Twitter: [@Quami_Killy](https://twitter.com/Quami_Killy)
+- LinkedIn: [@Kingsley Okine](https://www.linkedin.com/in/kingsley-okine/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+👤 **Walter Okumu**
 
-<!-- FUTURE FEATURES -->
+- GitHub: [@WalterOkumu](https://github.com/WalterOkumu)
+- Twitter: [@OkumuOriaro](https://twitter.com/OkumuOriaro)
 
-## 🔭 Future Features <a name="future-features"></a>
+👤 **Benjamin Kisenge**
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- GitHub: [@benjamin kisenge](https://github.com/iambenkis)
+- Twitter: [@benjamin kisenge](https://twitter.com/iambenkis)
+- LinkedIn: [benjamin kisenge](https://www.linkedin.com/in/ben-kisenge/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,9 +109,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+> If you like this project give it a star ⭐
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -204,25 +117,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+> I would like to thank Microverse Community.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -230,8 +125,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
