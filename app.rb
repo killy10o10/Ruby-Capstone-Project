@@ -81,6 +81,7 @@ class App
     system('clear')
   end
 
+  # rubocop:disable Metrics/CyclomaticComplexity
   def list_all_items(option)
     case option
     when 1
@@ -107,6 +108,7 @@ class App
     system('clear')
   end
 
+  # rubocop:enable Metrics/CyclomaticComplexity
   def add_items(option)
     case option
     when 7
