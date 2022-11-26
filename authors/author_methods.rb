@@ -1,6 +1,13 @@
 require 'json'
+require 'fileutils'
 
 module AuthorMethods
+
+  def create_file(path, items)
+    FileUtils.mkdir_p('./storage')
+    FileUtils.touch(path) unless File.exist?(path)
+    File.write(path, JSON.pretty_generate(items))
+  end
   def add_author(author)
     File.new('./storage/authors.json', 'w+') unless File.exist?('./storage/authors.json')
 
