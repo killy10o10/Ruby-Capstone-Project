@@ -10,6 +10,8 @@ require_relative './genres/genre'
 require_relative './genres/genre_methods'
 require_relative './music_albums/music_album'
 require_relative './music_albums/music_album_methods'
+require_relative './movies/movie_methods'
+require_relative './sources/source_methods'
 require 'io/console'
 
 require 'json'
@@ -23,6 +25,8 @@ class App
     @genres = load_all_genres
     @games = load_all_games
     @music_albums = load_all_music_albums
+    @movies = load_all_movies
+    @sources = load_all_sources
   end
 
   include BookMethods
@@ -31,6 +35,8 @@ class App
   include AuthorMethods
   include GenreMethods
   include MusicAlbumMethods
+  include MovieMethods
+  include SourceMethods
 
   def run
     print "⭐️ Welcome to the Catalog of my Things! ⭐️ \n\n"
@@ -45,7 +51,13 @@ class App
       7 - Add a book
       8 - Add a music album
       9 - Add a game
-     10 - Exit"
+      10 - Add a movie
+      11 - List all movies
+      12 - List all sources
+      13 - Exit"
+      option = gets.chomp.to_i
+      break if option == 13
+
       option = gets.chomp.to_i
       break if option == 10
 
@@ -57,9 +69,9 @@ class App
     system('clear')
 
     case option
-    when 1..6
+    when 1..12
       list_all_items(option)
-    when 7..9
+    when 7..12
       add_items(option)
     else
       invalid_option
@@ -72,6 +84,7 @@ class App
     system('clear')
   end
 
+  # rubocop:disable Metrics/CyclomaticComplexity
   def list_all_items(option)
     case option
     when 1
@@ -86,11 +99,18 @@ class App
       list_all_labels
     when 6
       list_authors
+    when 10
+      create_movie
+    when 11
+      list_movie
+    when 12
+      list_source
     end
     print "\nPress Enter/Return to Continue..."
     $stdin.getch
     system('clear')
   end
+  # rubocop:enable Metrics/CyclomaticComplexity
 
   def add_items(option)
     case option
