@@ -1,4 +1,4 @@
-require_relative '../source'
+require_relative '../sources/source'
 
 describe Source do
   context 'When create a new source' do
