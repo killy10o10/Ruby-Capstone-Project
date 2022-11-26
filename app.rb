@@ -58,24 +58,12 @@ class App
       option = gets.chomp.to_i
       break if option == 13
 
-      option = gets.chomp.to_i
-      break if option == 10
-
-      options(option)
+      list_all_items(option)
     end
   end
 
-  def options(option)
+  def options(_option)
     system('clear')
-
-    case option
-    when 1..12
-      list_all_items(option)
-    when 7..12
-      add_items(option)
-    else
-      invalid_option
-    end
   end
 
   def invalid_option()
@@ -99,6 +87,12 @@ class App
       list_all_labels
     when 6
       list_authors
+    when 7
+      create_book
+    when 8
+      add_music_album
+    when 9
+      add_game
     when 10
       create_movie
     when 11
@@ -111,15 +105,4 @@ class App
     system('clear')
   end
   # rubocop:enable Metrics/CyclomaticComplexity
-
-  def add_items(option)
-    case option
-    when 7
-      create_book
-    when 8
-      add_music_album
-    when 9
-      add_game
-    end
-  end
 end
