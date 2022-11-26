@@ -51,7 +51,7 @@ module MovieMethods
 
   def load_all_movies
     data = []
-    file = './storage/sources.json'
+    file = './storage/movies.json'
     return data unless File.exist?(file) && File.read(file) != ''
 
     JSON.parse(File.read(file)).each do |movie|
