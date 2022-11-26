@@ -1,4 +1,5 @@
 require 'json'
+require 'fileutils'
 
 def save_album(album)
   JSON.dump(album, File.open('./storage/albums.json', 'w+'))
