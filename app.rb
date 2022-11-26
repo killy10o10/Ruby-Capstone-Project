@@ -57,7 +57,7 @@ class App
       13 - Exit"
       option = gets.chomp.to_i
       break if option == 13
-     10 - Exit"
+
       option = gets.chomp.to_i
       break if option == 10
 
@@ -84,6 +84,7 @@ class App
     system('clear')
   end
 
+  # rubocop:disable Metrics/CyclomaticComplexity
   def list_all_items(option)
     case option
     when 1
@@ -109,6 +110,7 @@ class App
     $stdin.getch
     system('clear')
   end
+  # rubocop:enable Metrics/CyclomaticComplexity
 
   def add_items(option)
     case option
