@@ -20,7 +20,7 @@ class Item
     @author = author
     author.items << self
   end
-  
+
   def add_source(source)
     @source = source
     @source.items << self
